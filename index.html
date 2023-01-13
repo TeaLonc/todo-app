@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="container-md">
+        <form class="myForm">
+        <label for="title">TITLE:*</label>
+        <input type="text" id="title" maxlength="150">
+        <label for="description">DESCRIPTION</label>
+        <textarea id="description" rows="4" cols="50"></textarea>
+        <div>PRIORITY</div>
+        <input type="radio" value="Low" id="low" name="priority" checked>
+        <label for="low">Low</label><br>
+        <input type="radio" value="Medium" id="medium" name="priority">
+        <label for="medium">Medium</label><br>
+        <input type="radio" value="High" id="high" name="priority">
+        <label for="high">High</label><br>
+        <button id="send-button">SEND</button>
+        <button id="cancel-button">CANCEL</button>
+    </form>
+
+    <div class="todo-wrapper">
+        <!-- dinamičko generiranje-->
+        
+        <!--kraj-->
+    </div>
+
+
+    <script src="./script.js"></script>   
+</body>
+</html>

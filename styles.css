@@ -1,0 +1,79 @@
+.container-md {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 768px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+.todo-wrapper .todo-item {
+  background-color: #FBFBFB;
+  padding: 14px 30px;
+  border-radius: 8px;
+  border-left: 8px solid green;
+  -webkit-box-shadow: 3px 4px 9px -3px rgba(0, 0, 0, 0.18);
+          box-shadow: 3px 4px 9px -3px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  margin-bottom: 23px;
+}
+
+.todo-wrapper .todo-item:last-child {
+  margin-bottom: 0;
+}
+
+.todo-wrapper .todo-item:hover {
+  -webkit-box-shadow: 3px 4px 18px -3px rgba(0, 0, 0, 0.31);
+          box-shadow: 3px 4px 18px -3px rgba(0, 0, 0, 0.31);
+}
+
+.todo-wrapper .todo-item .description {
+  color: #595959;
+  font-size: 12px;
+}
+
+.todo-wrapper .todo-item .title {
+  font-size: 20px;
+  color: black;
+}
+
+.todo-wrapper .todo-item {
+  position: relative;
+}
+
+.todo-wrapper .todo-item:hover .delete-button {
+  display: block;
+}
+
+.todo-wrapper .delete-button {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+}
+
+.todo-wrapper .checkbox-done {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+}
+
+.todo-wrapper .date {
+  font-size: 10px;
+  color: black;
+}
+
+.todo-wrapper .low-color {
+  background-color: lightgray;
+}
+
+.todo-wrapper .medium-color {
+  background-color: lightyellow;
+}
+
+.todo-wrapper .high-color {
+  background-color: lightpink;
+}
+/*# sourceMappingURL=styles.css.map */
