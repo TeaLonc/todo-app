@@ -1,3 +1,7 @@
+import {minus} from './modules/minus';
+import myChart from './modules/pieChart'
+import {newId} from './modules/generateId';
+
 var taskArray = [];
 
 window.addEventListener('load', () => {
@@ -18,7 +22,8 @@ document.getElementById('send-button').addEventListener('click', (event) => {
     taskObject.titleObject = title;
     taskObject.descObject = description;
     taskObject.priorityObject = priority;
-    taskObject.id = generateToDoId(taskArray);   
+    taskObject.id = generateToDoId(taskArray);
+    taskObject.id = newId(taskArray);   
     taskArray.push(taskObject);
     localStorage.setItem('myTodoList', JSON.stringify(taskArray));    
     createElement(taskObject);    
@@ -73,6 +78,8 @@ function generateToDoId(taskArray) {
     }
     return newId;
 }
+
+myChart();
 
 /*taskArray.forEach(toDoObject => {
     const toDoItem = document.createElement('div');

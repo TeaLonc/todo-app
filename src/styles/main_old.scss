@@ -1,0 +1,12 @@
+@import './custom-variables';
+@import './bootstrap/bootstrap.scss';
+
+body {
+    background-color: $red;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bg-red {
+    background-color: red;
+}
