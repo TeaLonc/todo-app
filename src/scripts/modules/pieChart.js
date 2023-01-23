@@ -12,14 +12,14 @@ const myChart = () => {
   ];
 
   new Chart(
-    document.getElementById('acquisitions'),
+    document.getElementById('todo-tasks-pie'),
     {
-      type: 'bar',
+      type: 'pie',
       data: {
         labels: data.map(row => row.year),
         datasets: [
           {
-            label: 'Acquisitions by year',
+            label: 'Tasks',
             data: data.map(row => row.count)
           }
         ]
